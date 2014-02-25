@@ -1,10 +1,13 @@
 @import "bourbon/bourbon";
 
+@import "base/settings";
+
 @import "base/normalize";
 @import "base/syntax";
 @import "base/vertical-rhythm";
 @import "base/google-fonts";
 @import "base/icons";
+@import "base/general";
 
 @import "utilities/text";
 
