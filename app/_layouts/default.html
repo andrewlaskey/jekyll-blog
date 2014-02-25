@@ -17,49 +17,39 @@
 
     </head>
     <body>
-        <header class="SiteHeader">
-          <div class="SiteHeader-main">
-            <div class="SiteHeader-right">
-              <h1 class="SiteHeader-title"><a href="/">{{ site.name }}</a></h1>
-            </div>
-            <div class="Siteheader-left">
-              <nav class="WebProfiles">
-                <a href="https://github.com/andrewlaskey"><i class="icon-github"></i>github.com/andrewlaskey</a>
-                <a href="https://twitter.com/andrewlaskey"><i class="icon-twitter"></i>@andrewlaskey</a>
-                <a href="https://dribbble.com/andrewlaskey"><i class="icon-dribbble"></i>dribbble.com/andrewlaskey</a>
-                <a href="http://www.linkedin.com/pub/andrew-laskey/1/644/280"><i class="icon-linkedin"></i>LinkedIn</a>
+        <header class="Grid">
+          <div class="Grid-col-half">
+            <h1 class="HeaderTitle beta"><a href="/">{{ site.name }}</a></h1>
+          </div>
+          <div class="Grid-col-half">
+            <div class="HeaderNav">
+              <nav class="MainNav">
+                <a href="#">WORK</a>
+                <a href="#">BLOG</a>
+                <a href="#">ABOUT ME</a>
               </nav>
             </div>
-          </div>
-          <div class="Siteheader-nav">
-            <nav class="MainNav">
-              <a href="#">WORK</a>
-              <a href="#">BLOG</a>
-              <a href="#">ABOUT ME</a>
+            <nav class="HeaderSocial">
+              <a href="https://github.com/andrewlaskey"><i class="icon-github"></i><span class="u-screenReader">github.com/andrewlaskey</span></a>
+              <a href="https://twitter.com/andrewlaskey"><i class="icon-twitter"></i><span class="u-screenReader">@andrewlaskey</span></a>
+              <a href="https://dribbble.com/andrewlaskey"><i class="icon-dribbble"></i><span class="u-screenReader">dribbble.com/andrewlaskey</span></a>
+              <a href="http://www.linkedin.com/pub/andrew-laskey/1/644/280"><i class="icon-linkedin"></i><span class="u-screenReader">LinkedIn</span></a>
             </nav>
           </div>
         </header>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+        <div class="Grid">
+          <div class="Grid-col-full">
+
+            {{ content }}
+
           </div>
+        </div>
 
-          {{ content }}
-
-          <div class="footer">
+        <div class="Grid">
+          <div class="Grid-col-full">
             <div class="contact">
-              <p>
-                Andrew Laskey<br />
-                <a href="mailto:andrew.laskey@gmail.com">andrew.laskey@gmail.com</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+              <p>This site is made with Jekyll, Yeoman, and Bourbon.</p>
             </div>
           </div>
         </div>
