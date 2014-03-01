@@ -1,28 +1,11 @@
 //
-// Site Header
+// Grid
 //
 
 .Grid {
-	margin: 0 auto;
-	width: 100%;
-	max-width: $site-width;
-	@include clearfix;
-}
-
-.Grid-col-full,
-.Grid-col-half {
-	float: left;
-	padding: 0 1em;
-}
-
-.Grid-col-full {
-	width: 100%;
+	@extend %full-width;
 }
 
 .Grid-col-half {
-	width: 50%;
-
-	&:last-child {
-		float: right;
-	}
+	@extend %half-column;
 }
