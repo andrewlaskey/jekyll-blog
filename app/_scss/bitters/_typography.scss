@@ -122,3 +122,14 @@ cite {
     margin: 0;
   }
 }
+
+article {
+  ul {
+    margin: 0 0 ($base-line-height * .5) 1em;
+    list-style-type: disc;
+  }
+
+  h1, h2, h3, h4 {
+    margin-bottom: ($base-line-height * .5);
+  }
+}
