@@ -1,13 +1,21 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Andrew Laskey
 ---
 
 <div id="home">
   <h2 class="PageTitle u-h4">Hi, I make web things.</h2>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% if post.categories contains 'work' %}
+      <li>
+      	<a class="WorkExcerpt" href="{{ post.url }}">
+          <div class="WorkExcerpt-preview" data-stretch="{{ site.url }}/img/{{ post.image }}"></div>
+          <div class="WorkExcerpt-mask"></div>
+          <h4 class="WorkExcerpt-title">{{ post.title }}</h4>
+        </a>
+      </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
