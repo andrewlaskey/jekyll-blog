@@ -4,6 +4,18 @@
 
 $header-height: 2rem;
 
+.SiteHeader {
+	@extend %full-width;
+}
+
+.SiteHeader-left {
+	@extend %half-column;
+}
+
+.SiteHeader-right {
+	@extend %half-column;
+}
+
 .HeaderTitle,
 .HeaderNav {
 	margin: 1rem 0 0.5rem;
@@ -18,6 +30,10 @@ $header-height: 2rem;
 .HeaderNav,
 .HeaderSocial {
 	text-align: right;
+
+	@media #{$break-medium} {
+		text-align: center;
+	}	
 }
 
 .HeaderTitle,
@@ -30,6 +46,10 @@ $header-height: 2rem;
 
 .HeaderNav a {
 	margin: 0 0.5em;
+
+	&:first-child {
+		margin-left: 0; 
+	}
 
 	&:last-child {
 		margin-right: 0; 
@@ -44,11 +64,20 @@ $header-height: 2rem;
 	float: right;
 	padding: 0.5rem 0 0 2rem;
 	@extend %default-border-top;
+
+	@media #{$break-medium} {
+		float: none;
+		padding: 0.5rem 0 0;
+	}
 }
 
 .HeaderSocial a {
 	margin: 0 3px;
 	color: $social-link-color;
+
+	&:first-child {
+		margin-left: 0; 
+	}
 
 	&:last-child {
 		margin-right: 0; 
@@ -56,6 +85,10 @@ $header-height: 2rem;
 
 	&:hover {
 		color: darken($social-link-color, 10%);
+	}
+
+	@media #{$break-medium} {
+		margin: 0 0.5rem;
 	}
 }
 

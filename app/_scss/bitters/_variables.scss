@@ -12,6 +12,10 @@ $base-font-size: 1em;
 $base-line-height: $base-font-size * 1.5;
 $base-border-radius: em(3);
 
+// Breakpoints
+///////////////////////////////////////////////////////////////////////////////
+$break-medium: "only screen and (max-width : 47em)";
+
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -22,7 +26,7 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
-$dark: #444;
+$dark: #4d4d4d;
 $green: #4AC987;
 $blue: #5EA8C9;
 $turquoise: #09AAAF;
