@@ -3,11 +3,9 @@
 //
 
 a {
-	color: $link-color;
 	text-decoration: none;
 
 	&:hover {
-		color: darken($link-color, 5%);
 		text-decoration: underline;
 	}
 }
