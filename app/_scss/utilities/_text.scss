@@ -1,0 +1,11 @@
+//
+// Text Utils
+//
+
+.u-screenReader {
+	@include hide-text;
+}
+
+.u-textCenter {
+	text-align: center;
+}

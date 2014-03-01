@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Noto+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- build:css({app,.tmp}) /css/main.css -->
-        <!-- Syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
@@ -16,28 +15,36 @@
 
     </head>
     <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+        <header class="SiteHeader">
+          <div class="SiteHeader-left">
+            <h1 class="HeaderTitle u-h5"><a href="/"><span class="Logo"></span>{{ site.name }}</a></h1>
           </div>
+          <div class="SiteHeader-right">
+            <div class="HeaderNav">
+              <nav class="MainNav">
+                <a href="/">WORK</a>
+                <a href="{{ site.url }}/blog/">BLOG</a>
+                <a href="{{ site.url }}/about/">ABOUT ME</a>
+              </nav>
+            </div>
+            <nav class="HeaderSocial">
+              <a href="https://github.com/andrewlaskey"><i class="icon-github delta"></i><span class="u-screenReader">github.com/andrewlaskey</span></a>
+              <a href="https://twitter.com/andrewlaskey"><i class="icon-twitter delta"></i><span class="u-screenReader">@andrewlaskey</span></a>
+              <a href="https://dribbble.com/andrewlaskey"><i class="icon-dribbble delta"></i><span class="u-screenReader">dribbble.com/andrewlaskey</span></a>
+              <a href="http://www.linkedin.com/pub/andrew-laskey/1/644/280"><i class="icon-linkedin delta"></i><span class="u-screenReader">LinkedIn</span></a>
+            </nav>
+          </div>
+        </header>
+
+        <div class="PageContent">
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Andrew Laskey<br />
-                <a href="mailto:andrew.laskey@gmail.com">andrew.laskey@gmail.com</a>
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
+        </div>
+
+        <div class="SiteFooter">
+          <div class="SiteFooter-inner">
+            <p><small>This site is made with <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://yeoman.io/">Yeoman</a>, and <a href="http://bourbon.io/">Bourbon</a>. Check out the code on <a href="https://github.com/andrewlaskey/jekyll-blog">GitHub</a>.</small></p>
           </div>
         </div>
 

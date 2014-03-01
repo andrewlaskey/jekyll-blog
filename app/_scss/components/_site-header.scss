@@ -1,0 +1,150 @@
+//
+// Site Header
+//
+
+$header-height: 2rem;
+
+.SiteHeader {
+	@extend %full-width;
+}
+
+.SiteHeader-left {
+	@extend %half-column;
+}
+
+.SiteHeader-right {
+	@extend %half-column;
+}
+
+.HeaderTitle,
+.HeaderNav {
+	margin: 1rem 0 0.5rem;
+	height: $header-height;
+	line-height: $header-height;
+
+	a {
+		color: $header-color;
+	}
+}
+
+.HeaderNav,
+.HeaderSocial {
+	text-align: right;
+
+	@media #{$break-medium} {
+		text-align: center;
+	}	
+}
+
+.HeaderTitle,
+.HeaderNav,
+.HeaderSocial {
+	a {
+		text-decoration: none;
+	}
+}
+
+.HeaderNav a {
+	margin: 0 0.5em;
+
+	&:first-child {
+		margin-left: 0; 
+	}
+
+	&:last-child {
+		margin-right: 0; 
+	}
+
+	&:hover {
+		color: #111;
+	}
+}
+
+.HeaderSocial {
+	float: right;
+	padding: 0.5rem 0 0 2rem;
+	@extend %default-border-top;
+
+	@media #{$break-medium} {
+		float: none;
+		padding: 0.5rem 0 0;
+	}
+}
+
+.HeaderSocial a {
+	margin: 0 3px;
+	color: $social-link-color;
+
+	&:first-child {
+		margin-left: 0; 
+	}
+
+	&:last-child {
+		margin-right: 0; 
+	}
+
+	&:hover {
+		color: darken($social-link-color, 10%);
+	}
+
+	@media #{$break-medium} {
+		margin: 0 0.5rem;
+	}
+}
+
+.HeaderTitle {
+	&:hover {
+		.Logo {
+
+			&:before {
+				transform: translate(50%,-20%);
+			}
+
+			&:after {
+				transform: translate(-100%,150%);
+			}
+		}
+	}
+}
+
+$triangleSize: 20px;
+$triangleSize-small: 15px;
+.Logo {
+	float: left;
+	position: relative;
+	margin: 0 0.3rem 0 0;
+	width: 0; 
+	height: 0; 
+	border-bottom: $triangleSize * 1.6 solid rgba($logo-color,0.34); 
+	border-left: $triangleSize solid transparent; 
+	border-right: $triangleSize solid transparent;
+	-webkit-backface-visibility: visible;
+
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-bottom: ($triangleSize * 1.6)*0.6 solid rgba($logo-color,0.34); 
+		border-left: $triangleSize*0.6 solid transparent; 
+		border-right: $triangleSize*0.6 solid transparent;
+		top: 7px;
+		left: -8px;
+		transition: transform 0.2s ease;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-bottom: ($triangleSize * 1.6)*0.3 solid rgba($logo-color,0.34); 
+		border-left: $triangleSize*0.3 solid transparent; 
+		border-right: $triangleSize*0.3 solid transparent;
+		top: 12px;
+		left: -4px;
+		transition: transform 0.2s ease;
+	}
+}

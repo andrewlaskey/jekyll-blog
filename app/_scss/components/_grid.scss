@@ -1,0 +1,11 @@
+//
+// Grid
+//
+
+.Grid {
+	@extend %full-width;
+}
+
+.Grid-col-half {
+	@extend %half-column;
+}

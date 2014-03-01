@@ -1,0 +1,31 @@
+//
+// Placeholders
+//
+
+%default-border-top {
+	border-top: 1px solid $base-border-color;
+}
+
+%full-width {
+	margin: 0 auto;
+	padding: 0 1em;
+	width: 100%;
+	max-width: $site-width;
+	@include clearfix;
+}
+
+%half-column {
+	float: left;
+	width: 50%;
+
+	@media #{$break-medium} {
+		float: none;
+		width: 100%;
+	}
+}
+
+%background-stretch {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}

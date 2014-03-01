@@ -1,0 +1,60 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$sans-serif: $helvetica;
+$serif: $georgia;
+
+$base-font-family: 'Source Sans Pro', $sans-serif;
+$header-font-family: 'Noto Serif', $base-font-family;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1.2em;
+$base-line-height: $base-font-size * 1.2;
+$base-border-radius: em(3);
+
+$site-width: 38em;
+
+// Breakpoints
+///////////////////////////////////////////////////////////////////////////////
+$break-small: "only screen and (max-width : 33em)";
+$break-medium: "only screen and (max-width : 47em)";
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+
+$dark-gray: #111;
+$medium-gray: #888;
+$light-gray: #f0f0f0;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+$dark: #4d4d4d;
+$green: #4AC987;
+$green-light: #09AF6D;
+$blue: #5EA8C9;
+$turquoise: #09AAAF;
+
+// Body Color
+$base-body-color: #fcfcfc;
+
+//  Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $green-light;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $green;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
+
+//Site Header Colors
+$header-color: $dark;
+$social-link-color: $medium-gray;
+$logo-color: $green;

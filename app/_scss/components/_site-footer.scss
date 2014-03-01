@@ -1,0 +1,14 @@
+//
+// Site Footer
+//
+
+.SiteFooter {
+	@extend %full-width;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.SiteFooter-inner {
+	padding-top: 1rem;
+	@extend %default-border-top;
+}
