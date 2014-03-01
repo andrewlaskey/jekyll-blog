@@ -9,6 +9,8 @@ author:
   name: Andrew Laskey
   email: andrew.laskey@gmail.com
 
+url: http://andrewlaskey.com
+
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
