@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: work
 title:  "CampChaser"
 categories: work
 image: test.png
