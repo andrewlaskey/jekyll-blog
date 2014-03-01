@@ -8,12 +8,15 @@ $header-font-family: 'Noto Serif', $base-font-family;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
+$base-font-size: 1.2em;
+$base-line-height: $base-font-size * 1.2;
 $base-border-radius: em(3);
+
+$site-width: 38em;
 
 // Breakpoints
 ///////////////////////////////////////////////////////////////////////////////
+$break-small: "only screen and (max-width : 33em)";
 $break-medium: "only screen and (max-width : 47em)";
 
 // Colors
@@ -21,7 +24,7 @@ $break-medium: "only screen and (max-width : 47em)";
 
 $dark-gray: #333;
 $medium-gray: #888;
-$light-gray: #DDD;
+$light-gray: #f0f0f0;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
