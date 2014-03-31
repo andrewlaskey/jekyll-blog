@@ -39,10 +39,10 @@ Watch the process and make sure it downloads everything and you don't get 500 er
 Next, if it downloads completely, test it with 
 
 ```
-yo -v to
+yo -v
 ``` 
 
-get the version number. The terminal may say *"yo: command not found"*. This means the terminal doesnt know where yo is to run it. You have to fix this by modifying a variable called **$PATH**. 
+to get the version number. The terminal may say *"yo: command not found"*. This means the terminal doesnt know where yo is to run it. You have to fix this by modifying a variable called **$PATH**. 
 
 Go to your user folder and look for a **.bash_profile** file. Make sure you have [show hidden files turned on](http://www.mikesel.info/show-hidden-files-mac-os-x-10-7-lion/). If you don't have one, open up Sublime or whatever text editor you use and make one. The .bash_profile file is basically a file for custom settings for your user on your computer.
 
