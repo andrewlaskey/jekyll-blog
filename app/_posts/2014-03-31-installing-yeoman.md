@@ -14,9 +14,9 @@ So when I was finally able to get it running, I took down some quick notes on al
 
 The easiest way to do it is by downloading the package from [nodejs.org](http://nodejs.org/). Trying to update npm with `npm update -g or curl https://npmjs.org/install.sh | sh` was never successful or without some other issue. If you do use the curl method, and you have to run it with sudo make sure you sudo the sh as well. 
 
-{% highlight %}
+```
 sudo curl https://npmjs.org/install.sh | sudo sh.
-{% endhighlight %}
+```
 
 In the end it is just download the package and run the installer.
 
