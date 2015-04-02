@@ -85,10 +85,20 @@ $header-height: 2rem;
 
 	&:hover {
 		color: darken($social-link-color, 10%);
+
+		.icon {
+			fill: darken($social-link-color, 10%);
+		}
 	}
 
 	@media #{$break-medium} {
 		margin: 0 0.5rem;
+	}
+
+	.icon {
+		width: 1em;
+		height: 1em;
+		fill: $social-link-color;
 	}
 }
 
